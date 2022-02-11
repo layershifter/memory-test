@@ -1,17 +1,13 @@
 import React from "react";
-import {
-  Button,
-  FluentProvider,
-  webLightTheme,
-} from "@fluentui/react-components";
+import { Button, Provider, teamsTheme } from "@fluentui/react-northstar";
 
 function App() {
   return (
-    <FluentProvider theme={webLightTheme}>
+    <Provider theme={teamsTheme}>
       {Array.apply(null, Array(100)).map((_, i) => (
         <Button key={i}>{i}</Button>
       ))}
-    </FluentProvider>
+    </Provider>
   );
 }
 

@@ -1,13 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-function App() {
-  return <b>hello</b>;
-}
+// @ts-expect-error
+import App from "./fixture";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));

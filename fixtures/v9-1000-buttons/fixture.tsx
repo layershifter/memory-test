@@ -8,7 +8,7 @@ import {
 function App() {
   return (
     <FluentProvider theme={webLightTheme}>
-      {Array.apply(null, Array(100)).map((_, i) => (
+      {Array.apply(null, Array(1000)).map((_, i) => (
         <Button key={i}>{i}</Button>
       ))}
     </FluentProvider>
